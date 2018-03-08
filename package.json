@@ -1,0 +1,24 @@
+{
+  "name": "pri-plugins-manager",
+  "version": "1.0.0",
+  "description": "",
+  "types": "src/index.ts",
+  "main": "built/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ascoders/pri-plugins-manager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ascoders/pri-plugins-manager/issues"
+  },
+  "homepage": "https://github.com/ascoders/pri-plugins-manager#readme",
+  "devDependencies": {
+    "typescript": "^2.7.2"
+  }
+}
