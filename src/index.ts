@@ -1,3 +1,5 @@
+import { EventEmitter } from "events"
+
 const tag = "pri-plugins"
 
 declare var global: any
@@ -18,3 +20,13 @@ if (globalOrWindow[tag]) {
 }
 
 export { plugins }
+
+class PluginEmitter extends EventEmitter { }
+
+const pluginEvent = new PluginEmitter()
+
+export { pluginEvent }
+
+export const bin = () => {
+  pluginEvent.emit('bin')
+}
