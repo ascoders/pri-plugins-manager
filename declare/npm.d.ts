@@ -1,0 +1,1 @@
+declare module "pri/built/utils/cli-bin"

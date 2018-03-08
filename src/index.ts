@@ -1,5 +1,6 @@
-// tslint:disable-next-line:no-var-requires
-const priCliBin = require("pri/built/utils/cli-bin")
+
+
+import * as priCliBin from "pri/built/utils/cli-bin"
 
 const tag = "pri-plugins"
 

@@ -1,6 +1,6 @@
 {
   "name": "pri-plugins-manager",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "types": "src/index.ts",
   "main": "built/index.js",
@@ -21,7 +21,7 @@
   "devDependencies": {
     "typescript": "^2.7.2"
   },
-  "dependencies": {
+  "peerDependencies": {
     "pri": "*"
   }
 }
