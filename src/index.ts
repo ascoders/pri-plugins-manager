@@ -1,4 +1,5 @@
-import { EventEmitter } from "events"
+// tslint:disable-next-line:no-var-requires
+const priCliBin = require("pri/built/utils/cli-bin")
 
 const tag = "pri-plugins"
 
@@ -21,12 +22,6 @@ if (globalOrWindow[tag]) {
 
 export { plugins }
 
-class PluginEmitter extends EventEmitter { }
-
-const pluginEvent = new PluginEmitter()
-
-export { pluginEvent }
-
 export const bin = () => {
-  pluginEvent.emit('bin')
+  priCliBin.bin()
 }
